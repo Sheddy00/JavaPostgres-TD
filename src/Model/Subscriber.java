@@ -6,4 +6,8 @@ public class Subscriber extends User{
         super(id, userName, password, sex);
          this.reference = reference;
     }
+
+    public String getReference() {
+        return null;
+    }
 }

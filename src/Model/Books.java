@@ -19,6 +19,8 @@ public class Books {
         this.author = author;
     }
 
+    public Books(int id, String bookName, int pageNumber, String topic, Date releaseDate, String author) {}
+
     public void setId(int id) {
         this.id = id;
     }
@@ -35,15 +37,15 @@ public class Books {
         return pageNumber;
     }
 
-    public Topic getTopic() {
+    public String getTopic() {
         return topic;
     }
 
-    public Date getRealeseDate() {
+    public java.sql.Date getRealeseDate() {
         return realeseDate;
     }
 
-    public Author getAuthor() {
+    public String getAuthor() {
         return author;
     }
 }
