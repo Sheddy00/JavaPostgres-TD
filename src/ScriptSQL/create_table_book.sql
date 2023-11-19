@@ -10,12 +10,11 @@ CREATE TABLE IF NOT EXISTS book(
 );
 
 ALTER SEQUENCE book_id_seq RESTART WITH 1;
-ALTER TABLE book ALTER COLUMN id SET DEFAULT nextval(book_id_seq);
 
 INSERT INTO book (bookName, pageNumber, releaseDate, topic, id_author) VALUES
-    ('Kertzmann, Kohler and Dickens', 22, '10/1/2023', 'COMEDY', 1);
+    ('Kertzmann, Kohler and Dickens', 22, TO_DATE('10/1/2023','MM/DD/YYYY'), 'COMEDY', 1);
 INSERT INTO book (bookName, pageNumber, releaseDate, topic, id_author) VALUES
-    ('Little-Parker', 7, '5/14/2023', 'OTHER', 2);
+    ('Little-Parker', 7, TO_DATE('5/14/2023','MM/DD/YYYY'), 'OTHER', 2);
 INSERT INTO book (bookName, pageNumber, releaseDate, topic, id_author) VALUES
-    ('Boyer Group', 82, '5/5/2023', 'ROMANCE', 3);
+    ('Boyer Group', 82, TO_DATE('5/5/2023','MM/DD/YYYY'), 'ROMANCE', 3);
 

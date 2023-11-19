@@ -7,11 +7,10 @@ CREATE TABLE IF NOT EXISTS subscriber(
 );
 
 ALTER SEQUENCE subscriber_id_seq RESTART WITH 1;
-ALTER TABLE subscriber ALTER COLUMN id SET DEFAULT nextval(subscriber_id_seq);
 
 INSERT INTO subscriber (userName, password, sex, reference) VALUES
-    (1, 'Chelly', 'mU8(=.WdLPUMN+g%', 'F', '253');
+    ('Chelly', 'mU8(=.WdLP', 'F', '253');
 INSERT INTO subscriber (userName, password, sex, reference) VALUES
-    (2, 'Descartes', 'cM5/4x+4/kM''hso', 'M', '459');
+    ('Descartes', 'cM5/4x+4/', 'M', '459');
 INSERT INTO subscriber (userName, password, sex, reference) VALUES
-    (3, 'Pythagore', 'qK0F7lEi.@"=a', 'M', '187');
+    ('Pythagore', 'qK0F7lE', 'M', '187');
