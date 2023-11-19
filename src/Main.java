@@ -15,7 +15,7 @@ public class Main {
                     throw new IllegalStateException("Please define the url, username and password in the environment variable");
                 }
                 connection = DriverManager.getConnection(url, userName, password);
-                System.out.println("Connection réussi !!!");
+                System.out.println("Connection Successfully !");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
