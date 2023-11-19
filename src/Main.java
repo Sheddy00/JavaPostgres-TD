@@ -22,7 +22,7 @@ public class Main {
         }
         return connection;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         System.out.println("Hello world!");
         getConnection();
     }
